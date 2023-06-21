@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Unnamed Venture</title>
+  <style>
+    :root {
+      --color-background: linen;
+      --color-text: #302E2C;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-background: #152028;
+        --color-text: #eeeeee;
+      }
+    }
+    html {
+      font-family: Consolas monospace;
+      background-color: var(--color-background);
+      color: var(--color-text);
+      transition: color 500ms;
+      transition: background-color 500ms;
+    }
+    body {
+      transform: scale(0.5);
+      transform-origin: top center;
+      background-color: var(--color-background);
+      color: var(--color-text);
+      transition: color 500ms;
+      transition: background-color 500ms;
+      align-content: center;
+    }
+    div#content {
+      width: fit-content;
+      margin: 0 auto;
+    }
+    a#tree {
+      display: flex;
+      align-content: center;
+    }
+    picture#node {
+      margin: 0 auto;
+    }
+    pre#title {
+      padding: 2em 3em 2em 3em;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <a id="tree" href="https://github.com/GoodHatsLLC/StateTree">
+    <picture id="node">
+      <source media="(prefers-color-scheme: dark)" srcset="state-tree-light.png" />
+      <source media="(prefers-color-scheme: light)" srcset="state-tree-dark.png" />
+      <img alt="" src="state-tree-dark.png" />
+    </picture>
+  </a>
+     <pre id="title">
+ ooooo     ooo                                                                     .o8  
+ `888'     `8'                                                                    "888  
+  888       8  ooo. .oo.   ooo. .oo.    .oooo.   ooo. .oo.  .oo.    .ooooo.   .oooo888  
+  888       8  `888P"Y88b  `888P"Y88b  `P  )88b  `888P"Y88bP"Y88b  d88' `88b d88' `888  
+  888       8   888   888   888   888   .oP"888   888   888   888  888ooo888 888   888  
+  `88.    .8'   888   888   888   888  d8(  888   888   888   888  888    .o 888   888  
+    `YbodP'    o888o o888o o888o o888o `Y888""8o o888o o888o o888o `Y8bod8P' `Y8bod88P" 
+                                                                                        
+      oooooo     oooo                           .                                  
+       `888.     .8'                          .o8                                  
+        `888.   .8'    .ooooo.  ooo. .oo.   .o888oo oooo  oooo  oooo d8b  .ooooo.  
+         `888. .8'    d88' `88b `888P"Y88b    888   `888  `888  `888""8P d88' `88b 
+          `888.8'     888ooo888  888   888    888    888   888   888     888ooo888 
+           `888'      888    .o  888   888    888 .  888   888   888     888    .o 
+            `8'       `Y8bod8P' o888o o888o   "888"  `V88V"V8P' d888b    `Y8bod8P' 
+</pre>
+</div>
+</body>
+</html>
